@@ -3,7 +3,17 @@
 ## Creates helper functions around a given matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-  
+  inverse <- NULL
+  set <- function(y) {
+    x <<- y
+    inverse <<- NULL
+  }
+  get <- function() x
+  setInverse <- function(inv) inverse <<- inv
+  getInverse <- function() inverse
+  list(set = set, get = get,
+       setInverse = setInverse,
+       getInverse = getInverse)
 }
 
 
