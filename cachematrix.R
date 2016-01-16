@@ -1,15 +1,15 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This creates helper functions to wrap a matrix and cache the inverse
 
-## Write a short comment describing this function
+## Creates helper functions around a given matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-
+  
 }
 
 
-## Write a short comment describing this function
+## Checks the cache for the inverse, and calculates it if not found
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+  
 }
